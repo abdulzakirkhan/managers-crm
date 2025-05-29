@@ -11,7 +11,7 @@
 
     <!-- Title -->
     <!-- <title>Dashboard | Front - Admin &amp; Dashboard Template</title> -->
-    <title>eGeeks Global | VIP Clients Order</title>
+    <title>eGeeks Global |Writers Managers</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
@@ -264,7 +264,7 @@
 
     <!-- ========== HEADER ========== -->
 
-   
+    
     <header
       id="header"
       class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary shadow-lg"
@@ -457,7 +457,7 @@
               </div>
               <div class="nav-item">
                 <a
-                  class="nav-link align-items-center active"
+                  class="nav-link align-items-center"
                   href="vipclientorders.html"
                   data-placement="left"
                 >
@@ -497,7 +497,7 @@
               </div>
               <div class="nav-item">
                 <a
-                  class="nav-link align-items-center"
+                  class="nav-link align-items-center active"
                   href="writers-tagging-tl-managers.html"
                   data-placement="left"
                 >
@@ -880,154 +880,142 @@
         </div>
       </div>
       <div class="container-fluid mt-4">
-  <div class="card p-3">
-    <h6 class="mb-3">All Writers</h6>
-    <form class="row g-3 mb-3">
-      <div class="col-md-3">
-        <label class="form-label">Start Date</label>
-        <input type="date" class="form-control">
-      </div>
-      <div class="col-md-3">
-        <label class="form-label">End Date</label>
-        <input type="date" class="form-control">
-      </div>
-      <div class="col-md-3">
-        <label class="form-label">Order ID</label>
-        <input type="text" class="form-control">
-      </div>
-      <div class="col-md-3">
-        <label class="form-label">Select Client</label>
-        <select class="form-select">
-          <option>--Select--</option>
-        </select>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-search">Search Orders</button>
-      </div>
-    </form>
+        <div class="card p-3">
+          <div class="card-header">
+            <h6 class="mb-3">Writers Assign Categories</h6>
+          </div>
 
-    <table id="ordersTable" class="table table-bordered table-hover text-white" style="width:100%">
-      <thead>
-        <tr>
-          <th>Order Type</th>
-          <th>Order ID</th>
-          <th>Order Date</th>
-          <th>Order Platform</th>
-          <th>Order Deadline</th>
-          <th>Order Status</th>
-          <th>Type</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18093</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18094</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18095</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18096</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18097</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18098</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18099</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">180100</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+
+          <div class="card-body">
+            <form class="row py-3">
+                <div class="col-md-6">
+                    <label for="priority3" class="form-label">Select Writer</label>
+                    <select class="form-select" id="priority3">
+                        <option value="" disabled selected>--Select--</option>
+                        <option value="Alina Raza">Alina Raza</option>
+                        <option value="Majid">Majid</option>
+                        <option value="Qazi">Qazi</option>
+                        <option value="Subhan">Subhan</option>
+                    </select>
+                </div>
+            </form>
+              <table
+                id="ordersTable"
+                class="table table-bordered table-hover text-white"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Writer ID</th>
+                    <th>Writer Name</th>
+                    <th>Writer TL</th>
+                    <th>Writer Manager</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-info text-decoration-none">1</a>
+                    </td>
+                    <td>269</td>
+                    <td>Asim Iqbal</td>
+                    <td>Ume-Hani TL</td>
+                    <td>Noor Ul Ain</td>
+                    <td>
+                        <button class="btn" type="button" data-toggle="modal" data-target="#updateModal">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- ========== END SECONDARY CONTENTS ========== -->
+    <!-- ========== UPDATE PRIORITIES MODAL ========== -->
+     <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fs-3">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="row p-0 g-3">
+                    <div class="col-12">
+                        <label for="priority1" class="form-label">Writer Name</label>
+                        <input type="text" class="form-control" value="Writer Name">
+                    </div>
 
+                    <div class="col-12">
+                        <label for="priority2" class="form-label">Writer TL</label>
+                        <input type="text" class="form-control" value="writer tl">
+                    </div>
+
+                    <div class="col-12">
+                        <label for="priority3" class="form-label">Writer Manager</label>
+                        <select class="form-select" id="priority3" required>
+                            <option value="" disabled selected>Select Category</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Update</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- JS Dependencies -->
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
 
-<script>
-  $(document).ready(function () {
-    $('#ordersTable').DataTable({
-      pageLength: 5,
-      ordering: true,
-      lengthChange: false,
-      dom:
-    "<'row mb-3'" +
-      "<'col-sm-6'B>" +       // Left side: buttons
-      "<'col-sm-6 text-end'f>" + // Right side: search input
-    ">" +
-    "<'row'<'col-sm-12'tr>>" +
-    "<'row mt-2'<'col-sm-6'i><'col-sm-6'p>>",
-  buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-    });
-  });
-</script>
-
+    <script>
+      $(document).ready(function () {
+        $("#ordersTable").DataTable({
+          pageLength: 5,
+          ordering: true,
+          lengthChange: false,
+          dom:
+            "<'row mb-3'" +
+            "<'col-sm-6'B>" + // Left side: buttons
+            "<'col-sm-6 text-end'f>" + // Right side: search input
+            ">" +
+            "<'row'<'col-sm-12'tr>>" +
+            "<'row mt-2'<'col-sm-6'i><'col-sm-6'p>>",
+          buttons: ["copy", "csv", "excel", "pdf", "print"],
+        });
+      });
+    </script>
 
     <!-- JS Implementing Plugins -->
     <script src="assets/js/vendor.min.js"></script>

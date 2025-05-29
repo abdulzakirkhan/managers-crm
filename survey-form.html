@@ -11,7 +11,7 @@
 
     <!-- Title -->
     <!-- <title>Dashboard | Front - Admin &amp; Dashboard Template</title> -->
-    <title>eGeeks Global | VIP Clients Order</title>
+    <title>eGeeks Global |Writers Managers</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
@@ -264,7 +264,6 @@
 
     <!-- ========== HEADER ========== -->
 
-   
     <header
       id="header"
       class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary shadow-lg"
@@ -457,7 +456,7 @@
               </div>
               <div class="nav-item">
                 <a
-                  class="nav-link align-items-center active"
+                  class="nav-link align-items-center"
                   href="vipclientorders.html"
                   data-placement="left"
                 >
@@ -507,7 +506,7 @@
               </div>
               <div class="nav-item">
                 <a
-                  class="nav-link align-items-center"
+                  class="nav-link align-items-center active"
                   href="survey-form.html"
                   data-placement="left"
                 >
@@ -873,161 +872,767 @@
         <div class="row py-2 pt-5">
           <div class="col-md-12">
             <div class="d-flex justify-content-end align-items-center gap-2">
-              <button class="btn btn-outline-light border-white text-white">Mark Lunch Today</button>
-              <button class="btn btn-outline-light border-white text-white">Generate Tickets</button>
+              <button class="btn btn-outline-light border-white text-white">
+                Mark Lunch Today
+              </button>
+              <button class="btn btn-outline-light border-white text-white">
+                Generate Tickets
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-fluid mt-4">
-  <div class="card p-3">
-    <h6 class="mb-3">All Writers</h6>
-    <form class="row g-3 mb-3">
-      <div class="col-md-3">
-        <label class="form-label">Start Date</label>
-        <input type="date" class="form-control">
-      </div>
-      <div class="col-md-3">
-        <label class="form-label">End Date</label>
-        <input type="date" class="form-control">
-      </div>
-      <div class="col-md-3">
-        <label class="form-label">Order ID</label>
-        <input type="text" class="form-control">
-      </div>
-      <div class="col-md-3">
-        <label class="form-label">Select Client</label>
-        <select class="form-select">
-          <option>--Select--</option>
-        </select>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-search">Search Orders</button>
-      </div>
-    </form>
+      <div class="container-fluid py-5">
+        <h2 class="mb-4 text-center">Employee Feedback Survey</h2>
 
-    <table id="ordersTable" class="table table-bordered table-hover text-white" style="width:100%">
-      <thead>
-        <tr>
-          <th>Order Type</th>
-          <th>Order ID</th>
-          <th>Order Date</th>
-          <th>Order Platform</th>
-          <th>Order Deadline</th>
-          <th>Order Status</th>
-          <th>Type</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18093</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18094</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18095</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18096</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18097</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18098</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">18099</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-vip">Vip Order</span></td>
-          <td><a href="#" class="text-info text-decoration-none">180100</a></td>
-          <td>2025-05-27</td>
-          <td>Email Wowriters</td>
-          <td>2025-05-29</td>
-          <td>new</td>
-          <td>Assignment</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+        <form>
+          <!-- Survey Information -->
+          <div class="row g-3">
+            <div class="col-md-3" style="height: 100px">
+              <label class="form-label">Department Name</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="col-md-3" style="height: 100px">
+              <label class="form-label">Position Level</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="col-md-3" style="height: 100px">
+              <label class="form-label">Years with Company</label>
+              <select class="form-select">
+                <option>Less than 1 year</option>
+                <option>1-3 years</option>
+                <option>3-5 years</option>
+                <option>5+ years</option>
+              </select>
+            </div>
+            <div class="col-md-3" style="height: 100px">
+              <label class="form-label"
+                >Would you like this survey to be anonymous?</label
+              >
+              <select class="form-select">
+                <option>No</option>
+                <option>Yes</option>
+              </select>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <!-- Section Template Start -->
+          <div class="section">
+            <h5 class="text-primary">Work Environment & Satisfaction</h5>
+            <div class="row g-3">
+              <div class="col-md-4" style="height: 80px !important">
+                <label class="form-label" style="height: 35px"
+                  >How satisfied are you with your current role?</label
+                >
+                <div class="">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="1"
+                    /><label class="form-check-label">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="2"
+                    /><label class="form-check-label">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="3"
+                    /><label class="form-check-label">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="4"
+                    /><label class="form-check-label">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="5"
+                    /><label class="form-check-label">5</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >What do you enjoy most about working in your
+                  department?</label
+                >
+                <textarea class="form-control"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 20px"
+                  >What are the biggest frustrations or challenges you face in
+                  your role?</label
+                >
+                <textarea class="form-control"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >Is your workload reasonable?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >If not, what would help improve your workload balance?</label
+                >
+                <textarea
+                  class="form-control"
+                  rows="1"
+                  style="resize: none"
+                ></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 20px"
+                  >If you could change one thing about your daily work, what
+                  would it be?</label
+                >
+                <textarea
+                  class="form-control"
+                  rows="1"
+                  style="resize: none"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <div class="section">
+            <h5 class="text-primary">Interdepartmental Collaboration</h5>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >How effectively do departments collaborate with each
+                  other?</label
+                >
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="benefits"
+                      value="1"
+                    /><label class="form-check-label">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="benefits"
+                      value="2"
+                    /><label class="form-check-label">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="benefits"
+                      value="3"
+                    /><label class="form-check-label">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="benefits"
+                      value="4"
+                    /><label class="form-check-label">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="benefits"
+                      value="5"
+                    /><label class="form-check-label">5</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >Are there any recurring communication or collaboration issues
+                  between departments?</label
+                >
+                <textarea class="form-control"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >Do you feel the HR & Admin departments adequately support
+                  your needs?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 12px"
+                  >If you have faced any issues with HR & Admin, please describe
+                  them</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >How can the HR & Admin departments improve their
+                  support?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <!-- Are you satisfied with the HR processes (e.g., leaves, benefits, policies)? -->
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >Are you satisfied with the HR processes (e.g., leaves,
+                  benefits, policies)?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label"
+                  >What would you suggest to make HR processes smoother?</label
+                >
+                <textarea class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <div class="section">
+            <h5 class="text-primary">Career Growth & Development</h5>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >Do you feel there are opportunities for career growth within
+                  the company?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Does the company provide you with the necessary training and
+                  development to excel in your role?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >If not, what kind of training would you find useful?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Do you see yourself growing in this company in the next 2-3
+                  years?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 35px"
+                  >If no, what is holding you back?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="section">
+            <h5 class="text-primary">Workplace Culture & Relationships</h5>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >How would you describe the overall culture of the
+                  company?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Do you feel respected and treated fairly in the
+                  workplace?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Is there a person in the organization that annoys or
+                  frustrates you the most? If so, please share why</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Who is the most admirable person in the company, and
+                  why?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >How can the company improve its overall work culture?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="section">
+            <h5 class="text-primary">Work-Life Balance & Well-being</h5>
+            <div class="row g-3">
+              <div class="col-md-4" style="height: 80px !important">
+                <label class="form-label" style="height: 35px"
+                  >Do you feel you have a good work-life balance?</label
+                >
+                <div class="">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="1"
+                    /><label class="form-check-label">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="2"
+                    /><label class="form-check-label">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="3"
+                    /><label class="form-check-label">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="4"
+                    /><label class="form-check-label">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="5"
+                    /><label class="form-check-label">5</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Does the company promote mental health and well-being</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Do you feel supported if you experience personal or
+                  work-related stress?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >What can the company do to improve your well-being?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="section">
+            <h5 class="text-primary">
+              Confidence in the Company & Referral Likelihood
+            </h5>
+            <div class="row g-3">
+              <div class="col-md-4" style="height: 80px !important">
+                <label class="form-label" style="height: 35px"
+                  >Would you recommend someone to work for this company?</label
+                >
+                <div class="">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="1"
+                    /><label class="form-check-label">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="2"
+                    /><label class="form-check-label">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="3"
+                    /><label class="form-check-label">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="4"
+                    /><label class="form-check-label">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="5"
+                    /><label class="form-check-label">5</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >What would you tell a friend or colleague about working
+                  here?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Would you refer someone to apply for a job in your
+                  department?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px">
+                  department? --No-- What would make you more confident in
+                  referring someone?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px">
+                  What can the company do to improve its reputation among
+                  employees?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="section">
+            <h5 class="text-primary">Feedback on HR & Admin Department</h5>
+            <div class="row g-3">
+              <div class="col-md-4" style="height: 80px !important">
+                <label class="form-label" style="height: 35px"
+                  >How satisfied are you with the performance of the HR & Admin
+                  departments?</label
+                >
+                <div class="">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="1"
+                    /><label class="form-check-label">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="2"
+                    /><label class="form-check-label">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="3"
+                    /><label class="form-check-label">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="4"
+                    /><label class="form-check-label">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="satisfaction"
+                      value="5"
+                    /><label class="form-check-label">5</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Do you feel that HR & Admin are responsive to your concerns
+                  or issues?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >What specific actions can HR & Admin take to improve their
+                  service?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Do you feel that HR policies are clear and communicated
+                  effectively?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >If not, which policies are confusing or unclear?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Have you ever experienced any delays or inefficiencies in HR
+                  processes (leaves, complaints, etc.)?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >How can HR help in improving your overall job
+                  satisfaction?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="section">
+            <h5 class="text-primary">Suggestions & Recommendations</h5>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >What one change would you make to improve the workplace environment?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >What suggestions do you have for the company’s leadership to improve overall employee satisfaction?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Any additional comments or feedback you'd like to share?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="section">
+            <h5 class="text-primary">Closing</h5>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Would you be interested in participating in a follow-up discussion or focus group?</label
+                >
+                <select class="form-select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" style="height: 30px"
+                  >Do you have any final thoughts or comments?</label
+                >
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center py-4">
+            <button class="btn btn-success btn-lg">Submit Survey</button>
+          </div>
+        </form>
+      </div>
     </main>
     <!-- ========== END SECONDARY CONTENTS ========== -->
+    <!-- ========== UPDATE PRIORITIES MODAL ========== -->
+    <div
+      class="modal fade"
+      id="updateModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="updateModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close btn"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true" class="fs-3">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="row p-0 g-3">
+              <div class="col-12">
+                <label for="priority1" class="form-label">Writer Name</label>
+                <input type="text" class="form-control" value="Writer Name" />
+              </div>
 
+              <div class="col-12">
+                <label for="priority2" class="form-label">Writer TL</label>
+                <input type="text" class="form-control" value="writer tl" />
+              </div>
+
+              <div class="col-12">
+                <label for="priority3" class="form-label">Writer Manager</label>
+                <select class="form-select" id="priority3" required>
+                  <option value="" disabled selected>Select Category</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <!-- JS Dependencies -->
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
 
-<script>
-  $(document).ready(function () {
-    $('#ordersTable').DataTable({
-      pageLength: 5,
-      ordering: true,
-      lengthChange: false,
-      dom:
-    "<'row mb-3'" +
-      "<'col-sm-6'B>" +       // Left side: buttons
-      "<'col-sm-6 text-end'f>" + // Right side: search input
-    ">" +
-    "<'row'<'col-sm-12'tr>>" +
-    "<'row mt-2'<'col-sm-6'i><'col-sm-6'p>>",
-  buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-    });
-  });
-</script>
-
+    <script>
+      $(document).ready(function () {
+        $("#ordersTable").DataTable({
+          pageLength: 5,
+          ordering: true,
+          lengthChange: false,
+          dom:
+            "<'row mb-3'" +
+            "<'col-sm-6'B>" + // Left side: buttons
+            "<'col-sm-6 text-end'f>" + // Right side: search input
+            ">" +
+            "<'row'<'col-sm-12'tr>>" +
+            "<'row mt-2'<'col-sm-6'i><'col-sm-6'p>>",
+          buttons: ["copy", "csv", "excel", "pdf", "print"],
+        });
+      });
+    </script>
 
     <!-- JS Implementing Plugins -->
     <script src="assets/js/vendor.min.js"></script>

@@ -266,6 +266,7 @@
 
     <!-- ========== HEADER ========== -->
 
+   
     <header
       id="header"
       class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary shadow-lg"
@@ -296,12 +297,9 @@
         </button>
 
         <!-- Navigation -->
-        <div class="collapse navbar-collapse" id="mainNav">
+        <div class="collapse navbar-collapse align-items-center" id="mainNav">
           <!-- Main Navigation -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item mx-0">
-              <a class="nav-link px-3 py-2 hover-effect" href="#"> Home </a>
-            </li>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle px-3 py-2 hover-effect"
@@ -379,13 +377,8 @@
           </ul>
 
           <!-- Right Section -->
-          <div class="d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-outline-light text-white px-2">
-              Mark Luch Today
-            </button>
-            <button type="button" class="btn btn-outline-light text-white px-2">
-              Generate Ticket
-            </button>
+
+          <div class="d-flex align-items-center gap-1 border">
             <i class="fas fa-expand-arrows-alt"></i>
             <i class="fas fa-th-large"></i>
           </div>
@@ -409,8 +402,6 @@
             <img
               class="navbar-brand-logo"
               src="assets/img/logos/egeekslogowhite.png"
-              alt="Logo"
-              data-hs-theme-appearance="default"
             />
           </a>
 
@@ -479,7 +470,17 @@
               <div class="nav-item">
                 <a
                   class="nav-link align-items-center"
-                  href=""
+                  href="orders-files-views.html"
+                  data-placement="left"
+                >
+                  <i class="fas fa-file-alt nav-icon"></i>
+                  <span class="nav-link-title">Orders Files</span>
+                </a>
+              </div>
+              <div class="nav-item">
+                <a
+                  class="nav-link align-items-center"
+                  href="awarded-orders-writers-managers.html"
                   data-placement="left"
                 >
                   <i class="fas fa-clipboard-list nav-icon"></i>
@@ -489,7 +490,7 @@
               <div class="nav-item">
                 <a
                   class="nav-link align-items-center"
-                  href=""
+                  href="writers_auto_assign_category_priorities.html"
                   data-placement="left"
                 >
                   <i class="fas fa-layer-group nav-icon"></i>
@@ -499,7 +500,7 @@
               <div class="nav-item">
                 <a
                   class="nav-link align-items-center"
-                  href=""
+                  href="writers-tagging-tl-managers.html"
                   data-placement="left"
                 >
                   <i class="fas fa-user-tag nav-icon"></i>
@@ -509,7 +510,7 @@
               <div class="nav-item">
                 <a
                   class="nav-link align-items-center"
-                  href=""
+                  href="survey-form.html"
                   data-placement="left"
                 >
                   <i class="fas fa-poll nav-icon"></i>
@@ -519,7 +520,7 @@
               <div class="nav-item">
                 <a
                   class="nav-link align-items-center"
-                  href=""
+                  href="revision-report.html"
                   data-placement="left"
                 >
                   <i class="fas fa-file-signature nav-icon"></i>
@@ -529,7 +530,7 @@
               <div class="nav-item">
                 <a
                   class="nav-link align-items-center"
-                  href=""
+                  href="tl-report.html"
                   data-placement="left"
                 >
                   <i class="fas fa-user-check nav-icon"></i>
@@ -557,15 +558,15 @@
                     class="nav-collapse collapse"
                     data-bs-parent="#navbarVerticalMenuPagesMenu"
                   >
-                    <a class="nav-link" href="">Start Quiz</a>
-                    <a class="nav-link" href="">Quiz Result</a>
+                    <a class="nav-link" href="start-quiz.html">Start Quiz</a>
+                    <a class="nav-link" href="quiz-result.html">Quiz Result</a>
                   </div>
                 </div>
 
                 <div class="nav-item">
                   <a
                     class="nav-link align-items-center"
-                    href=""
+                    href="external-report-revision.html"
                     data-placement="left"
                   >
                     <i class="fas fa-user-edit nav-icon"></i>
@@ -592,11 +593,11 @@
                     class="nav-collapse collapse"
                     data-bs-parent="#navbarVerticalMenuPagesMenu"
                   >
-                    <a class="nav-link" href="">Today Productivity</a>
-                    <a class="nav-link" href="account-billing.html"
+                    <a class="nav-link" href="today-productivity.html">Today Productivity</a>
+                    <a class="nav-link" href="yesterday-productivity.html"
                       >Yesterday Productivity</a
                     >
-                    <a class="nav-link" href="account-invoice.html"
+                    <a class="nav-link" href="monthly-productivity.html"
                       >Monthly Productivity</a
                     >
                   </div>
@@ -605,7 +606,7 @@
                 <div class="nav-item">
                   <a
                     class="nav-link align-items-center"
-                    href=""
+                    href="qa-productivity.html"
                     data-placement="left"
                   >
                     <i class="fas fa-user-check nav-icon"></i>
@@ -870,6 +871,16 @@
     <!-- End Navbar Vertical -->
 
     <main id="content" role="main" class="main">
+      <div class="container-fluid">
+        <div class="row py-2 pt-5">
+          <div class="col-md-12">
+            <div class="d-flex justify-content-end align-items-center gap-2">
+              <button class="btn btn-outline-light border-white text-white">Mark Lunch Today</button>
+              <button class="btn btn-outline-light border-white text-white">Generate Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container-fluid mt-5">
         <div class="row g-4">
           <div class="col-md-3">

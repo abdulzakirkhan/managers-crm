@@ -603,7 +603,7 @@
 
                 <div class="nav-item">
                   <a
-                    class="nav-link align-items-center active"
+                    class="nav-link align-items-center"
                     href="qa-productivity.html"
                     data-placement="left"
                   >
@@ -613,7 +613,7 @@
                 </div>
                 <div class="nav-item">
                   <a
-                    class="nav-link align-items-center"
+                    class="nav-link align-items-center active"
                     href="qa-productivity-report.html"
                     data-placement="left"
                   >
@@ -624,7 +624,7 @@
                 <div class="nav-item">
                   <a
                     class="nav-link align-items-center"
-                    href=""
+                    href="error-report-generation.html"
                     data-placement="left"
                   >
                     <i class="fas fa-exclamation-triangle nav-icon"></i>
@@ -884,51 +884,50 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <form class="row py-4">
-                            <div class="col-md-6">
-                                <label for="orderId">Order ID</label>
-                                <input type="text" class="form-control" id="orderId" name="orderId">
+                        <div class="card-header border-0">
+                            <h1 class="card-title">QA Productivity Report</h1>
+                        </div>
+                        <div class="card-body">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="startDate">End Date <span class="text-danger">*</span></label>
+                                    <input type="date" name="startDate" id="startDate" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="endDate">End Date <span class="text-danger">*</span></label>
+                                    <input type="date" name="endDate" id="endDate" class="form-control">
+                                </div>
+                            </form>
+                            <div class="table-responsive py-3">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Type</th>
+                                            <th>Paper Topic</th>
+                                            <th>Writers TLs</th>
+                                            <th>Total Words</th>
+                                            <th>Total Words For QA</th>
+                                            <th>QA Words Done</th>
+                                            <th>Remaining Words QA</th>
+                                            <th>QA By</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>133</td>
+                                            <td>Assignment</td>
+                                            <td>Level 4 -Bus 1.5</td>
+                                            <td>Order Not Assign Yet</td>
+                                            <td>2000</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>Salsabeel Ali</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="col-12 py-2">
-                                <button class="btn btn-primary py-2">Search</button>
-                                <button class="btn btn-primary py-2">Reset</button>
-                            </div>
-                        </form>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead class="">
-                                    <tr>
-                                        <th>Order ID</th>
-                                        <th>Type</th>
-                                        <th>Paper Topic</th>
-                                        <th>Writer TLs</th>
-                                        <th>Total Words</th>
-                                        <th>Total Words For QA</th>
-                                        <th>QA Words Done</th>
-                                        <th>Remaining Words QA</th>
-                                        <th>QA BY</th>
-                                        <th>Add QA Words</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2024-07-13320</td>
-                                        <td>Meeting With Student</td>
-                                        <td>Meeting With Student</td>
-                                        <td>N/A	</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td><input type="text" class="form-control" placeholder="Add QA Words"></td>
-                                        <td>
-                                            <button class="btn btn-outline-light text-white border-white">Add Qa</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>

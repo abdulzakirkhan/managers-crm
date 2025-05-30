@@ -253,6 +253,40 @@
         font-weight: bold;
       }
     </style>
+     <style>
+    .form-container {
+      border-radius: 5px;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .form-control {
+      border: 1px solid #555;
+      color: white;
+    }
+    .form-control::placeholder {
+      color: #bbb;
+    }
+    .form-label {
+      font-weight: 500;
+    }
+    .btn-update {
+      background-color: #2ecc71;
+      border: none;
+    }
+    .profile-pic {
+      width: 90px !important;
+      height: 90px !important;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+    }
+    .upload-label {
+      cursor: pointer;
+      color: #00bcd4;
+      font-weight: 500;
+    }
+  </style>
   </head>
 
   <body
@@ -264,7 +298,6 @@
 
     <!-- ========== HEADER ========== -->
 
-    
     <header
       id="header"
       class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary shadow-lg"
@@ -527,7 +560,7 @@
               </div>
               <div class="nav-item">
                 <a
-                  class="nav-link align-items-center "
+                  class="nav-link align-items-center"
                   href="tl-report.html"
                   data-placement="left"
                 >
@@ -591,7 +624,9 @@
                     class="nav-collapse collapse"
                     data-bs-parent="#navbarVerticalMenuPagesMenu"
                   >
-                    <a class="nav-link" href="today-productivity.html">Today Productivity</a>
+                    <a class="nav-link" href="today-productivity.html"
+                      >Today Productivity</a
+                    >
                     <a class="nav-link" href="yesterday-productivity.html"
                       >Yesterday Productivity</a
                     >
@@ -603,7 +638,7 @@
 
                 <div class="nav-item">
                   <a
-                    class="nav-link align-items-center active"
+                    class="nav-link align-items-center"
                     href="qa-productivity.html"
                     data-placement="left"
                   >
@@ -624,7 +659,7 @@
                 <div class="nav-item">
                   <a
                     class="nav-link align-items-center"
-                    href=""
+                    href="error-report-generation.html"
                     data-placement="left"
                   >
                     <i class="fas fa-exclamation-triangle nav-icon"></i>
@@ -634,7 +669,7 @@
                 <div class="nav-item">
                   <a
                     class="nav-link align-items-center"
-                    href=""
+                    href="changes-password-writer-manager.html"
                     data-placement="left"
                   >
                     <i class="fas fa-key nav-icon"></i>
@@ -643,8 +678,8 @@
                 </div>
                 <div class="nav-item">
                   <a
-                    class="nav-link align-items-center"
-                    href=""
+                    class="nav-link align-items-center active"
+                    href="add-daily-productivity.html"
                     data-placement="left"
                   >
                     <i class="fas fa-calendar-plus nav-icon"></i>
@@ -654,7 +689,7 @@
                 <div class="nav-item">
                   <a
                     class="nav-link align-items-center"
-                    href=""
+                    href="writers-managers-productivity.html"
                     data-placement="left"
                   >
                     <i class="fas fa-chart-line nav-icon"></i>
@@ -883,53 +918,106 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
+                    <div class="card-header border-0">
+                        <h3 class="card-title">Add Daily Productivity</h3>
+                    </div>
                     <div class="card-body">
-                        <form class="row py-4">
-                            <div class="col-md-6">
-                                <label for="orderId">Order ID</label>
-                                <input type="text" class="form-control" id="orderId" name="orderId">
+                        <form>
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <label for="orders" style="height: 40px;">No Of Cross Check Orders</label>
+                                    <input type="number" class="form-control" id="orders" name="orders">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="orderDetails" style="height: 40px;">Cross Check Orders Detail</label>
+                                    <textarea class="form-control" id="orderDetails" name="orderDetails" rows="1" style="resize: none;"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="session">Training Session Data Added On Portal/ Session Detail</label>
+                                    <textarea class="form-control" id="session" name="session" rows="1" style="resize: none;"></textarea>
+                                </div>
                             </div>
-                            <div class="col-12 py-2">
-                                <button class="btn btn-primary py-2">Search</button>
-                                <button class="btn btn-primary py-2">Reset</button>
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <label for="delieverOrders">No Of Orders Deliever</label>
+                                    <input type="number" class="form-control" id="delieverOrders" name="delieverOrders" rows="1" style="resize: none;">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="d">Order Delievered Detail</label>
+                                    <textarea class="form-control" id="d" name="d" rows="1" style="resize: none;"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="files">No Of Files/Queries Spot Checked</label>
+                                    <input type="number" class="form-control" id="files" name="files" rows="1" style="resize: none;">
+                                </div>
+                            </div>
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <label for="filesDetails">Files/Queries Spot Checked Detail</label>
+                                    <textarea class="form-control" id="filesDetails" name="filesDetails" rows="1" style="resize: none;"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="tls">No Of Sessions With TLs</label>
+                                    <input type="number" class="form-control" id="tls" name="tls" rows="1" style="resize: none;">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="filesDetails">Session With TLs Detail</label>
+                                    <textarea class="form-control" id="filesDetails" name="filesDetails" rows="1" style="resize: none;"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <label for="tls">Total No Of Team Sessions</label>
+                                    <input type="number" class="form-control" id="tls" name="tls" rows="1" style="resize: none;">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="filesDetails">Team Session Detail</label>
+                                    <textarea class="form-control" id="filesDetails" name="filesDetails" rows="1" style="resize: none;"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="tls">Total Team Productivity</label>
+                                    <input type="number" class="form-control" id="tls" name="tls" rows="1" style="resize: none;">
+                                </div>
+                            </div>
+
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <label for="filesDetails">Team Productiivity Detail</label>
+                                    <textarea class="form-control" id="filesDetails" name="filesDetails" rows="1" style="resize: none;"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="tls">No Of Extension Requested</label>
+                                    <input type="number" class="form-control" id="tls" name="tls" rows="1" style="resize: none;">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="filesDetails">Extension Requested Detail</label>
+                                    <textarea class="form-control" id="filesDetails" name="filesDetails" rows="1" style="resize: none;"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <label for="tls">No Of Deadlines Missed</label>
+                                    <input type="number" class="form-control" id="tls" name="tls" rows="1" style="resize: none;">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="filesDetails">Deadlines Missed Detail</label>
+                                    <textarea class="form-control" id="filesDetails" name="filesDetails" rows="1" style="resize: none;"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="tls">No Of Cross Checking Files</label>
+                                    <input type="number" class="form-control" id="tls" name="tls" rows="1" style="resize: none;">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="filesDetails">Cross Check Files Detail</label>
+                                <textarea class="form-control" id="filesDetails" name="filesDetails" rows="1" style="resize: none;"></textarea>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-outline-light text-white border-white py-2 mt-4">Add Productivity</button>
                             </div>
                         </form>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead class="">
-                                    <tr>
-                                        <th>Order ID</th>
-                                        <th>Type</th>
-                                        <th>Paper Topic</th>
-                                        <th>Writer TLs</th>
-                                        <th>Total Words</th>
-                                        <th>Total Words For QA</th>
-                                        <th>QA Words Done</th>
-                                        <th>Remaining Words QA</th>
-                                        <th>QA BY</th>
-                                        <th>Add QA Words</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2024-07-13320</td>
-                                        <td>Meeting With Student</td>
-                                        <td>Meeting With Student</td>
-                                        <td>N/A	</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td><input type="text" class="form-control" placeholder="Add QA Words"></td>
-                                        <td>
-                                            <button class="btn btn-outline-light text-white border-white">Add Qa</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -937,21 +1025,22 @@
       </div>
     </main>
     <!-- ========== END SECONDARY CONTENTS ========== -->
-    
 
-
-
-
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- JS Implementing Plugins -->
     <script src="assets/js/vendor.min.js"></script>
